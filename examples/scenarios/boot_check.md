@@ -1,3 +1,7 @@
+<a id="chinese"></a>
+
+中文 | [English](#english)
+
 # 开机自检
 
 ## 目标
@@ -41,3 +45,16 @@ ros2 topic info /navigation/cmd_vel
 - 核心服务调用返回正常
 - `/joint_states` 有持续数据
 - 模式切换服务可用且返回成功
+
+
+---
+
+<a id="english"></a>
+
+[中文](#chinese) | English
+
+# English
+
+This section corresponds to the Chinese content above.
+
+For now, please refer to the Chinese section for full details.

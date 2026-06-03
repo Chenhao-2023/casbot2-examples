@@ -1,3 +1,7 @@
+<a id="chinese"></a>
+
+中文 | [English](#english)
+
 # 运行仿真
 
 ## 目标
@@ -40,3 +44,16 @@ ros2 run casbot_cpp_test t04_cmd_vel
 
 - 仿真分支可能与实机接口略有差异，需以当前 binary 为准。
 - 部分动作在仿真下可能受限（例如腿部锁定导致动作返回失败）。
+
+
+---
+
+<a id="english"></a>
+
+[中文](#chinese) | English
+
+# English
+
+This section corresponds to the Chinese content above.
+
+For now, please refer to the Chinese section for full details.

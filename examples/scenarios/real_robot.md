@@ -1,3 +1,7 @@
+<a id="chinese"></a>
+
+中文 | [English](#english)
+
 # 运行实机测试
 
 ## 目标
@@ -38,3 +42,16 @@ python3 t04_cmd_vel.py
 - 服务调用成功率高
 - 关节反馈连续且无异常跳变
 - 模式切换符合预期，不出现不可恢复状态
+
+
+---
+
+<a id="english"></a>
+
+[中文](#chinese) | English
+
+# English
+
+This section corresponds to the Chinese content above.
+
+For now, please refer to the Chinese section for full details.

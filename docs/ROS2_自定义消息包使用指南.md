@@ -1,3 +1,7 @@
+<a id="chinese"></a>
+
+中文 | [English](#english)
+
 # ROS 2 自定义消息包使用指南（`crb_ros_msg`）
 
 本仓库已内置 CASBOT2 使用的自定义消息包：
@@ -84,3 +88,16 @@ ament_target_dependencies(your_target crb_ros_msg)
 
 - **Q: `ros2 interface show` 查不到接口**  
   A: 当前终端环境未 source 正确工作区，或消息包编译失败。
+
+
+---
+
+<a id="english"></a>
+
+[中文](#chinese) | English
+
+# English
+
+This section corresponds to the Chinese content above.
+
+For now, please refer to the Chinese section for full details.

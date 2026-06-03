@@ -1,3 +1,7 @@
+<a id="chinese"></a>
+
+中文 | [English](#english)
+
 # Examples 导航
 
 为便于查找，`examples` 按用途分为 4 层：
@@ -37,3 +41,16 @@
   - `debug_joint_demo`
   - `monitor_topics_demo`
   - `action_voice_demo`
+
+
+---
+
+<a id="english"></a>
+
+[中文](#chinese) | English
+
+# English
+
+This section corresponds to the Chinese content above.
+
+For now, please refer to the Chinese section for full details.

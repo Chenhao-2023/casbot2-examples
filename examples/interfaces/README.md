@@ -1,3 +1,7 @@
+<a id="chinese"></a>
+
+中文 | [English](#english)
+
 # 接口全覆盖示例
 
 本文档给出 CASBOT2 常用接口的“可执行示例入口”。  
@@ -114,3 +118,16 @@ source install/setup.bash
   ```bash
   python3 examples/interfaces/python/all_interfaces_demo.py event_skill --action-type wave_hand
   ```
+
+
+---
+
+<a id="english"></a>
+
+[中文](#chinese) | English
+
+# English
+
+This section corresponds to the Chinese content above.
+
+For now, please refer to the Chinese section for full details.
