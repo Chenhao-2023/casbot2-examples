@@ -52,8 +52,45 @@ ros2 run casbot_cpp_test t04_cmd_vel
 
 [中文](#chinese) | English
 
-# English
+# Simulation Workflow
 
-This section corresponds to the Chinese content above.
+## Goal
 
-For now, please refer to the Chinese section for full details.
+Validate mode switching, velocity control, upper-body debug, and action flow in MuJoCo simulation.
+
+## Recommended Sequence
+
+1. Start simulation and `hlorin`
+2. Run boot check (`boot_check.md`)
+3. Run base control scripts:
+   - `t02_switch_mode.py`
+   - `t04_cmd_vel.py`
+   - `t05_upper_debug.py`
+4. Run flow tests:
+   - `test_flow1_walk.py`
+   - `test_flow2_upper_debug.py`
+   - `test_flow3_whole_body.py`
+   - `test_flow4_sensors_and_actions.py`
+
+## Python Example
+
+```bash
+cd examples/workflows/python/casbot_py_test
+python3 t01_get_state.py
+python3 test_flow1_walk.py
+```
+
+## C++ Example
+
+```bash
+cd examples/workflows/cpp/casbot_cpp_test
+colcon build --packages-select casbot_cpp_test
+source install/setup.bash
+ros2 run casbot_cpp_test t01_get_state
+ros2 run casbot_cpp_test t04_cmd_vel
+```
+
+## Notes
+
+- Simulation branch and real robot interfaces may differ; follow current binary behavior.
+- Some actions can be limited in simulation (for example, leg lock causing action failure).

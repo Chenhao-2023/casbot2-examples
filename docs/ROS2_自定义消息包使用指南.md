@@ -96,8 +96,89 @@ ament_target_dependencies(your_target crb_ros_msg)
 
 [中文](#chinese) | English
 
-# English
+# ROS 2 Custom Interface Package Guide (`crb_ros_msg`)
 
-This section corresponds to the Chinese content above.
+This repository already includes the custom interface package used by CASBOT2:
 
-For now, please refer to the Chinese section for full details.
+- Path: `packages/crb_ros_msg`
+- Package name: `crb_ros_msg`
+- Interface types: `msg` / `srv` / `action`
+
+## 1. Package Structure
+
+Main contents of `crb_ros_msg`:
+
+- `msg/`: custom messages (for example, `UpperJointData.msg`, `RobotState.msg`)
+- `srv/`: service definitions (for example, `GetRobotMode.srv`, `SetRobotMode.srv`, `Voice.srv`)
+- `action/`: action definitions (for example, `BasicActionPlay.action`)
+- `CMakeLists.txt`: `rosidl_generate_interfaces(...)` entry
+- `package.xml`: dependency declarations (`rosidl_default_generators`, `std_msgs`, `sensor_msgs`)
+
+## 2. Build the Custom Package
+
+Run at repository root:
+
+```bash
+source /opt/ros/humble/setup.bash
+colcon build --packages-select crb_ros_msg
+source install/setup.bash
+```
+
+Verify interfaces:
+
+```bash
+ros2 interface list | grep crb_ros_msg
+ros2 interface show crb_ros_msg/msg/UpperJointData
+ros2 interface show crb_ros_msg/srv/GetRobotMode
+ros2 interface show crb_ros_msg/action/BasicActionPlay
+```
+
+## 3. Use in Python Packages
+
+Add dependency in `package.xml`:
+
+```xml
+<depend>crb_ros_msg</depend>
+```
+
+Python imports:
+
+```python
+from crb_ros_msg.msg import JointStateData
+from crb_ros_msg.srv import GetRobotMode
+from crb_ros_msg.action import BasicActionPlay
+```
+
+## 4. Use in C++ Packages
+
+Add dependency in `package.xml`:
+
+```xml
+<depend>crb_ros_msg</depend>
+```
+
+In `CMakeLists.txt`:
+
+```cmake
+find_package(crb_ros_msg REQUIRED)
+ament_target_dependencies(your_target crb_ros_msg)
+```
+
+C++ headers:
+
+```cpp
+#include "crb_ros_msg/msg/joint_state_data.hpp"
+#include "crb_ros_msg/srv/get_robot_mode.hpp"
+#include "crb_ros_msg/action/basic_action_play.hpp"
+```
+
+## 5. FAQ
+
+- **Q: `ModuleNotFoundError: crb_ros_msg` in Python**  
+  A: `install/setup.bash` is not sourced, or `crb_ros_msg` has not been built correctly.
+
+- **Q: C++ cannot find message headers**  
+  A: Check both `find_package(crb_ros_msg REQUIRED)` and `ament_target_dependencies(...)`.
+
+- **Q: `ros2 interface show` cannot find interfaces**  
+  A: Current terminal environment is not sourced correctly, or message package build failed.

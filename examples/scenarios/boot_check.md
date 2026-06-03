@@ -53,8 +53,46 @@ ros2 topic info /navigation/cmd_vel
 
 [中文](#chinese) | English
 
-# English
+# Boot Check
 
-This section corresponds to the Chinese content above.
+## Goal
 
-For now, please refer to the Chinese section for full details.
+After robot or simulation startup, confirm ROS 2 communication, key services, and key topics are all available.
+
+## Steps
+
+1. Source environment
+
+```bash
+source /opt/ros/humble/setup.bash
+source /workspace/prod_casbot02_basic/install/setup.bash 2>/dev/null || true
+source /workspace/HLmotion/setup.bash 2>/dev/null || source /workspace/hl_motion/setup.bash 2>/dev/null || true
+```
+
+2. Basic diagnostics
+
+```bash
+ros2 doctor --report
+ros2 topic list
+ros2 service list
+```
+
+3. Core interface checks
+
+```bash
+ros2 service call get_robot_mode crb_ros_msg/srv/GetRobotMode "{}"
+ros2 service call get_robot_state_srv_hl crb_ros_msg/srv/GetRobotState "{start: true}"
+ros2 topic info /joint_states
+ros2 topic info /navigation/cmd_vel
+```
+
+4. Recommended workflow self-check scripts
+
+- Python: `../workflows/python/casbot_py_test/t01_get_state.py`
+- C++: `../workflows/cpp/casbot_cpp_test/src/t01_get_state.cpp` (build first)
+
+## Pass Criteria
+
+- Core service calls return successfully
+- `/joint_states` has continuous data
+- Mode-switch services are available and return success

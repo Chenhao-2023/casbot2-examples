@@ -49,8 +49,42 @@
 
 [中文](#chinese) | English
 
-# English
+# Examples Index
 
-This section corresponds to the Chinese content above.
+To keep navigation clear, `examples` is organized into four layers:
 
-For now, please refer to the Chinese section for full details.
+## 1) Scenario Guides
+
+- `scenarios/boot_check.md`: boot-time checklist
+- `scenarios/simulation.md`: simulation workflow
+- `scenarios/real_robot.md`: real robot validation workflow
+
+## 2) Full Interface Coverage
+
+- `interfaces/README.md`: full interface usage reference
+- `interfaces/python/all_interfaces_demo.py`: unified command-line tool
+
+## 3) Automated Workflow Tests
+
+- `workflows/python/casbot_py_test/`: Python workflows (t01~t05 + test_flow)
+- `workflows/cpp/casbot_cpp_test/`: C++ workflows (t01~t05)
+
+## 4) Base Demo Packages
+
+- `cpp/casbot2_cpp_demo/`
+- `python/casbot2_py_demo/`
+
+Current base demo entries:
+
+- C++:
+  - `basic_control_demo`
+  - `service_mode_demo`
+  - `debug_joint_demo`
+  - `monitor_topics_demo`
+  - `action_voice_demo`
+- Python:
+  - `control_demo`
+  - `service_mode_demo`
+  - `debug_joint_demo`
+  - `monitor_topics_demo`
+  - `action_voice_demo`

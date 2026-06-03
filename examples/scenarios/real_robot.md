@@ -50,8 +50,43 @@ python3 t04_cmd_vel.py
 
 [中文](#chinese) | English
 
-# English
+# Real Robot Validation Workflow
 
-This section corresponds to the Chinese content above.
+## Goal
 
-For now, please refer to the Chinese section for full details.
+Complete real robot interface validation in a safe order, covering mode switching, walking, upper-body debug, and whole-body debug.
+
+## Safety Preconditions
+
+- Safety operator is present
+- Start with low speed and low gains
+- Robot is ready in standing state and emergency stop is available
+
+## Recommended Test Flow
+
+1. Boot check (`boot_check.md`)
+2. Mode service checks (`t01_get_state`, `t02_switch_mode`)
+3. Low-speed walking check (`t04_cmd_vel`)
+4. Upper-body debug check (`t05_upper_debug`)
+5. Whole-body debug check (`test_flow3_whole_body.py`)
+6. Debug gain check (`test_flow_debug_kp_kd.py`)
+
+## Execution Suggestions
+
+- Run Python quick checks first, then C++ stability tests.
+- Return to `STAND` or `ZERO` after each stage before entering the next stage.
+
+## Typical Commands
+
+```bash
+cd examples/workflows/python/casbot_py_test
+python3 t01_get_state.py
+python3 t02_switch_mode.py
+python3 t04_cmd_vel.py
+```
+
+## Pass Criteria
+
+- High service call success rate
+- Continuous joint feedback without abnormal jumps
+- Mode switches behave as expected without unrecoverable state
