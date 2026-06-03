@@ -12,6 +12,8 @@
 - `00_开机自检.md`：上电后自检与 ROS 接口连通性检查
 - `01_运行仿真.md`：MuJoCo 仿真环境下的推荐运行流程
 - `02_运行实机测试.md`：实机模式下的安全测试顺序
+- `接口全覆盖示例.md`：按接口逐项给出调用用法
+- `interfaces/python/all_interfaces_demo.py`：全接口统一调用脚本
 - `workflows/cpp/casbot_cpp_test/`：C++ 版本 workflow
 - `workflows/python/casbot_py_test/`：Python 版本 workflow
 
