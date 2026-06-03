@@ -19,6 +19,10 @@ setup(
     entry_points={
         "console_scripts": [
             "control_demo = casbot2_py_demo.control_demo:main",
+            "service_mode_demo = casbot2_py_demo.service_mode_demo:main",
+            "debug_joint_demo = casbot2_py_demo.debug_joint_demo:main",
+            "monitor_topics_demo = casbot2_py_demo.monitor_topics_demo:main",
+            "action_voice_demo = casbot2_py_demo.action_voice_demo:main",
         ],
     },
 )

@@ -10,7 +10,9 @@
 
   <depend>rclpy</depend>
   <depend>std_srvs</depend>
+  <depend>std_msgs</depend>
   <depend>geometry_msgs</depend>
+  <depend>sensor_msgs</depend>
   <depend>crb_ros_msg</depend>
 
   <export>

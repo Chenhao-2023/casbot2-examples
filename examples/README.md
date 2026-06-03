@@ -22,3 +22,18 @@
 
 - `cpp/casbot2_cpp_demo/`
 - `python/casbot2_py_demo/`
+
+当前基础 Demo 覆盖入口：
+
+- C++：
+  - `basic_control_demo`
+  - `service_mode_demo`
+  - `debug_joint_demo`
+  - `monitor_topics_demo`
+  - `action_voice_demo`
+- Python：
+  - `control_demo`
+  - `service_mode_demo`
+  - `debug_joint_demo`
+  - `monitor_topics_demo`
+  - `action_voice_demo`
