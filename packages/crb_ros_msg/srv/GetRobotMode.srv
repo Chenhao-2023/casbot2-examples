@@ -1,0 +1,4 @@
+# Request: empty
+---
+int32 mode
+string mode_name

@@ -1,0 +1,15 @@
+# UNDEFINED = 0,
+# DAMPING = 1,                // 阻尼模式
+# READY = 2,                  // 准备模式
+# SPORT = 3,                  // 运动模式
+# ACTION_PLAY = 4,            // 动作播放
+# TELEOPERATION = 5,          // 遥操作
+# DEBUG = 6,                  // 调试模式
+
+int32 mode_type
+string mode_name
+bool upper_body
+bool lower_body
+---
+bool success   # indicate successful run of triggered service
+string message # informational, e.g. for error messages

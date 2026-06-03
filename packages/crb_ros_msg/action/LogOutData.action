@@ -1,0 +1,8 @@
+# Goal
+bool start_log # 
+---
+# Result
+bool start_log_res
+---
+# Feedback:中间反馈
+int32 state #状态，0：未播放，1：加载文件中

@@ -1,0 +1,28 @@
+# Request
+
+# id for trace and query state, it's unique normally
+string event_id
+
+# trigger action with event name which is enum
+string event_type
+
+# if waiting for result with blocking call
+bool blocking
+
+# parameters which can be empty
+string param_json
+
+---
+# Response
+
+# 0 is success, else failed
+int32 error_code
+
+# current fsm state
+string current_state
+
+# indicate which event is executing
+string source_event_id
+
+# error description
+string msg
