@@ -1,0 +1,6 @@
+# Request
+string mode_name # ZERO,STAND,WALK,TREAD
+
+---
+# Response true or false
+bool success

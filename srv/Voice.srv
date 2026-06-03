@@ -1,0 +1,16 @@
+# Request
+# rtc_start, rtc_stop, question, answer
+string type
+
+# text, object_string
+string content_type
+
+# xxxx, {"xx": "xxxxx", ...}
+string content
+
+---
+# Response
+bool success
+
+# error description
+string msg

@@ -1,0 +1,8 @@
+# Goal
+string type # 点赞:thumb_up，挥手:wave_hand，比心:heart_gesture，恭喜：congratulation_gesture，剪刀手/耶：v_gesture
+---
+# Result
+bool if_success
+---
+# Feedback:中间反馈
+int32 state #状态，0：未播放，1：加载文件中；2：动作播放中；3：动作结束

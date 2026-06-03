@@ -1,0 +1,8 @@
+# Goal
+bool rset # 
+---
+# Result
+bool res
+---
+# Feedback:中间反馈
+int32 state #状态，0：未播放，1：加载文件中

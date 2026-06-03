@@ -1,0 +1,13 @@
+# Goal
+float64 start_time
+string action_name
+string cancel_action_name
+string rl_name
+---
+# Result
+bool if_success
+---
+# Feedback:中间反馈
+uint64 action_index
+float64 exec_time
+int32 state #状态，0：未播放，1：加载文件中；2：动作播放中；3：动作结束; 4: 动作取消； 5： 动作取消结束

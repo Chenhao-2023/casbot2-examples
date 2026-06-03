@@ -1,0 +1,5 @@
+# GetRobotState.srv
+
+bool start
+---
+uint8 state  #1:xxx,2:xxx
