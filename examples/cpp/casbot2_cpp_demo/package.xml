@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>casbot2_cpp_demo</name>
+  <version>0.1.0</version>
+  <description>CASBOT2 C++ secondary development demos</description>
+  <maintainer email="maintainer@example.com">casbot2-dev</maintainer>
+  <license>MIT</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <depend>rclcpp</depend>
+  <depend>std_srvs</depend>
+  <depend>geometry_msgs</depend>
+  <depend>crb_ros_msg</depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
