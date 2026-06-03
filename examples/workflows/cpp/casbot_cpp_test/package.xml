@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>casbot_cpp_test</name>
+  <version>0.1.0</version>
+  <description>CASBOT02 ROS2 接口 C++ 测试工程</description>
+  <maintainer email="dev@casbot.com">robotch</maintainer>
+  <license>Apache-2.0</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <depend>rclcpp</depend>
+  <depend>rclcpp_action</depend>
+  <depend>std_srvs</depend>
+  <depend>std_msgs</depend>
+  <depend>geometry_msgs</depend>
+  <depend>sensor_msgs</depend>
+  <depend>crb_ros_msg</depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
