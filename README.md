@@ -11,10 +11,11 @@
 
 - `examples/cpp/casbot2_cpp_demo/`：C++ 基础 demo 包
 - `examples/python/casbot2_py_demo/`：Python 基础 demo 包
+- `examples/README.md`：examples 总导航
 - `examples/workflows/cpp/casbot_cpp_test/`：C++ workflow 测试工程（t01~t05）
 - `examples/workflows/python/casbot_py_test/`：Python workflow 测试脚本（t01~t05 + test_flow）
-- `examples/EXAMPLES_介绍.md`：examples 总览
-- `examples/接口全覆盖示例.md`：所有接口的用法说明与示例入口
+- `examples/scenarios/`：开机自检、仿真联调、实机联调
+- `examples/interfaces/README.md`：所有接口的用法说明
 - `examples/interfaces/python/all_interfaces_demo.py`：全接口 Python 调用工具
 - `docs/`：对外文档（手册、接口、快速开始、发布说明）
 
@@ -69,4 +70,4 @@ python3 examples/interfaces/python/all_interfaces_demo.py --help
 - `docs/快速开始.md`
 - `docs/二次开发手册.md`
 - `docs/运动控制接口.md`
-- `examples/接口全覆盖示例.md`
+- `examples/interfaces/README.md`

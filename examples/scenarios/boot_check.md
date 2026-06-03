@@ -1,4 +1,4 @@
-# 开机自检示例
+# 开机自检
 
 ## 目标
 
@@ -33,8 +33,8 @@ ros2 topic info /navigation/cmd_vel
 
 4. 建议执行 workflow 自检脚本
 
-- Python：`workflows/python/casbot_py_test/t01_get_state.py`
-- C++：`workflows/cpp/casbot_cpp_test/src/t01_get_state.cpp`（先编译）
+- Python：`../workflows/python/casbot_py_test/t01_get_state.py`
+- C++：`../workflows/cpp/casbot_cpp_test/src/t01_get_state.cpp`（先编译）
 
 ## 判定标准
 

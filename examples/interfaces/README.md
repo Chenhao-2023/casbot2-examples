@@ -1,7 +1,7 @@
 # 接口全覆盖示例
 
 本文档给出 CASBOT2 常用接口的“可执行示例入口”。  
-配套脚本：`examples/interfaces/python/all_interfaces_demo.py`
+配套脚本：`python/all_interfaces_demo.py`
 
 ## 使用前准备
 
@@ -107,8 +107,3 @@ source /workspace/HLmotion/setup.bash 2>/dev/null || source /workspace/hl_motion
   ```bash
   python3 examples/interfaces/python/all_interfaces_demo.py event_skill --action-type wave_hand
   ```
-
-## 5. 说明
-
-- 上述命令覆盖了当前仓库文档中列出的主要接口类型与常用调用方式。
-- 若现场软件版本接口有变动，请以 `ros2 topic list / ros2 service list / ros2 action list` 为准。

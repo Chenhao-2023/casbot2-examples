@@ -1,0 +1,24 @@
+# Examples 导航
+
+为便于查找，`examples` 按用途分为 4 层：
+
+## 1) 场景化操作指引
+
+- `scenarios/boot_check.md`：开机自检
+- `scenarios/simulation.md`：仿真联调流程
+- `scenarios/real_robot.md`：实机联调流程
+
+## 2) 接口全覆盖示例
+
+- `interfaces/README.md`：所有接口用法总览
+- `interfaces/python/all_interfaces_demo.py`：统一命令行调用工具
+
+## 3) 自动化 Workflow 测试
+
+- `workflows/python/casbot_py_test/`：Python workflow（t01~t05 + test_flow）
+- `workflows/cpp/casbot_cpp_test/`：C++ workflow（t01~t05）
+
+## 4) 基础 Demo 包
+
+- `cpp/casbot2_cpp_demo/`
+- `python/casbot2_py_demo/`
