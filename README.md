@@ -9,6 +9,7 @@
 
 ## 目录说明
 
+- `packages/crb_ros_msg/`：ROS 2 自定义消息包（msg/srv/action）
 - `examples/cpp/casbot2_cpp_demo/`：C++ 基础 demo 包
 - `examples/python/casbot2_py_demo/`：Python 基础 demo 包
 - `examples/README.md`：examples 总导航
@@ -70,4 +71,5 @@ python3 examples/interfaces/python/all_interfaces_demo.py --help
 - `docs/快速开始.md`
 - `docs/二次开发手册.md`
 - `docs/运动控制接口.md`
+- `docs/ROS2_自定义消息包使用指南.md`
 - `examples/interfaces/README.md`

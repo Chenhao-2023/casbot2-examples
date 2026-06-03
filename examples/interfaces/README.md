@@ -11,6 +11,13 @@ source /workspace/prod_casbot02_basic/install/setup.bash 2>/dev/null || true
 source /workspace/HLmotion/setup.bash 2>/dev/null || source /workspace/hl_motion/setup.bash 2>/dev/null || true
 ```
 
+如果你在本仓库内开发，建议先编译自定义消息包：
+
+```bash
+colcon build --packages-select crb_ros_msg
+source install/setup.bash
+```
+
 ## 1. 模式与状态类 Service
 
 - `get_robot_mode`
